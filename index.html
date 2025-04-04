@@ -2,27 +2,25 @@
 <html>
 
 <head>
-    <!-- head is for metadata -->
-    <!-- title is the name of the document  -->
     <title>Progear Hub</title>
-    <!-- icon for page -->
     <link rel="icon" href="icon-transparent.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </head>
 
 <body>
     <header class="main-header">
         <a href="index.html">
-            <img class="logo" src="images/PGHlogo.png">
+            <img class="logo" src="images/PGHlogo.png" alt="ProGear Hub Logo">
         </a>
         <button type="button" class="menu-button">
             <i class="fa-solid fa-bars"></i>
@@ -35,7 +33,6 @@
         </form>
         <nav class="main-navigation">
             <a href="index.html">
-                <!-- <i class="fa-solid fa-house"></i> -->
                 Home
             </a>
             <a href="products.html">Products</a>
@@ -44,10 +41,22 @@
         </nav>
     </header>
     <main>
-        <section class="featured">
+        <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
+            <div class="carousel-cell">
+                <img  alt="a pair of shoes" src="images/branislav-belko-lJ7iAZxplpc-unsplash.jpg">
+            </div>
+            <div class="carousel-cell">
+                <img  alt="a tennis racquet and a ball" src="images/hoi-pham-eLZwsPO8cCQ-unsplash.jpg">
+            </div>
+            <div class="carousel-cell">...</div>
+            ...
+          </div>
+          <br>
+          <br>
+          <section class="featured">
             <h2>Featured Categories</h2>
             <div class="categories">
-                <div class="card">
+                <div class="category-item card">
                     <img class="card-image" alt="a pair of shoes" src="images/branislav-belko-lJ7iAZxplpc-unsplash.jpg">
                     <div class="card-content">
                         <h4>Shoes</h4>
@@ -55,47 +64,72 @@
                         <a href="#" class="card-button">Shop</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-image" alt="a tennis racquet and a ball"
-                        src="images/hoi-pham-eLZwsPO8cCQ-unsplash.jpg">
+                <div class="category-item card">
+                    <img class="card-image" alt="a tennis racquet and a ball" src="images/hoi-pham-eLZwsPO8cCQ-unsplash.jpg">
                     <div class="card-content">
                         <h4>Tennis</h4>
                         <p class="description">Tennis gear</p>
                         <a href="#" class="card-button">Shop</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-image" src="images/ruslan-ruslan-AhAMJgq5QPM-unsplash.jpg">
+                <div class="category-item card">
+                    <img class="card-image" src="images/ruslan-ruslan-AhAMJgq5QPM-unsplash.jpg" alt="Basketball">
                     <div class="card-content">
                         <h4>Basketball</h4>
                         <p class="description">Basketball gear</p>
                         <a href="#" class="card-button">Shop</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-image" src="images/ruslan-ruslan-AhAMJgq5QPM-unsplash.jpg">
+                <div class="category-item card">
+                    <img class="card-image" src="images/ruslan-ruslan-AhAMJgq5QPM-unsplash.jpg" alt="Basketball">
                     <div class="card-content">
                         <h4>Basketball</h4>
                         <p class="description">Basketball gear</p>
                         <a href="#" class="card-button">Shop</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-image" src="images/ruslan-ruslan-AhAMJgq5QPM-unsplash.jpg">
+                
+                
+            </div>
+        </section>
+        <br> <br> 
+        <section class="featured">
+            <h2>Featured Categories</h2>
+            <div class="categories">
+                <div class="category-item card">
+                    <img class="card-image" alt="a pair of shoes" src="images/branislav-belko-lJ7iAZxplpc-unsplash.jpg">
+                    <div class="card-content">
+                        <h4>Shoes</h4>
+                        <p class="description">Sports shoes</p>
+                        <a href="#" class="card-button">Shop</a>
+                    </div>
+                </div>
+                <div class="category-item card">
+                    <img class="card-image" alt="a tennis racquet and a ball" src="images/hoi-pham-eLZwsPO8cCQ-unsplash.jpg">
+                    <div class="card-content">
+                        <h4>Tennis</h4>
+                        <p class="description">Tennis gear</p>
+                        <a href="#" class="card-button">Shop</a>
+                    </div>
+                </div>
+                <div class="category-item card">
+                    <img class="card-image" src="images/ruslan-ruslan-AhAMJgq5QPM-unsplash.jpg" alt="Basketball">
                     <div class="card-content">
                         <h4>Basketball</h4>
                         <p class="description">Basketball gear</p>
                         <a href="#" class="card-button">Shop</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-image" src="images/ruslan-ruslan-AhAMJgq5QPM-unsplash.jpg">
+                <div class="category-item card">
+                    <img class="card-image" src="images/ruslan-ruslan-AhAMJgq5QPM-unsplash.jpg" alt="Basketball">
                     <div class="card-content">
                         <h4>Basketball</h4>
                         <p class="description">Basketball gear</p>
                         <a href="#" class="card-button">Shop</a>
                     </div>
                 </div>
+                
+                
             </div>
         </section>
     </main>

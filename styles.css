@@ -1,6 +1,6 @@
 :root {
     /* CSS HSL */
-    --air-superiority-blue: hsla(201, 33%, 62%, 1);
+    --air-superiority-blue: rgb(245, 251, 254);
     --isabelline: hsla(20, 33%, 95%, 1);
     --alloy-orange: hsla(26, 70%, 45%, 1);
     --black: hsla(0, 0%, 0%, 1);
@@ -10,21 +10,22 @@ body {
     background-color: var(--air-superiority-blue);
     margin: 0px;
     font-family: "Roboto", sans-serif;
+
 }
 
 .logo {
-    width: 100px;
+    width: 300px;
 }
 
 .main-header {
-    background-color: var(--black);
+    background-color: #69fffa51;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
     flex-wrap: wrap;
-    font-family: Silkscreen, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 #search {
@@ -35,7 +36,7 @@ body {
     border: 1px solid var(--alloy-orange);
     border-radius: 5px;
     overflow: hidden;
-    align-self: flex-end;
+    align-self: auto;
     margin-bottom: 10px;
 }
 
@@ -54,15 +55,16 @@ body {
 .main-navigation {
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
+    align-self: auto;
 }
 .main-navigation a {
-    color: var(--isabelline);
+    color: #4169E1;
     text-decoration: none;
     padding: 10px;
 }
 .main-navigation a:hover {
-    background-color: var(--alloy-orange);
+    background-color: navy;
+    color: var(--isabelline);
 }
 
 .menu-button {
@@ -72,34 +74,52 @@ body {
     border: 1px solid var(--alloy-orange);
     display: none;
 }
+.main-carousel{
+    max-width:80;
+    margin:auto;
+}
 .featured {
     max-width: 80vw;
     margin: auto;
+    color: var(--alloy-orange);
+    border: 1px solid var(--alloy-orange);
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #ffa0692c;
+    padding: 20px;
 }
-.categories {
+.carousel-cell {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+
+    
+}
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 24px;
 }
 .card {
-    border: 1px solid var(--isabelline);
-    background-color: var(--isabelline);
-    border-radius: 15px;
+    border: 1px solid var(--alloy-orange);
+    background-color: #defffe;
+    border-radius: 6px;
     overflow: hidden;
 }
 .card-image {
     max-width: 100%;
-    aspect-ratio: 3/4;
+    aspect-ratio: 4/6;
     object-fit: cover;
     border: 1px solid var(--black);
 }
 .card-content {
     padding: 15px;
+    color: var(--alloy-orange);
 }
 .card-button {
     display: block;
     padding: 12px;
-    background-color: var(--black);
+    background-color: #4169E1;
     color: var(--isabelline);
     text-align: center;
     text-decoration: none;
