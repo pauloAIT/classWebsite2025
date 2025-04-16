@@ -1,48 +1,12 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <!-- head is for metadata -->
-    <!-- title is the name of the document  -->
-    <title>Progear Hub</title>
-    <!-- icon for page -->
-    <link rel="icon" href="icon-transparent.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
-</head>
+<?php
+// include head section
+include "components/head.php";
+?>
 
 <body>
-    <header class="main-header">
-        <a href="index.html">
-            <img class="logo" src="images/PGHlogo.png">
-        </a>
-        <button type="button" class="menu-button">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <form id="search">
-            <input type="search" name="search" placeholder="type your search">
-            <button type="submit" name="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </form>
-        <nav class="main-navigation">
-            <a href="index.html">
-                <!-- <i class="fa-solid fa-house"></i> -->
-                Home
-            </a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <?php include "components/header.php"; ?>
     <main>
         <section class="featured">
             <h2>Featured Categories</h2>
@@ -99,20 +63,7 @@
             </div>
         </section>
     </main>
-    <footer class="main-footer">
-        <nav class="social">
-            <a href="https://facebook.com">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://instagram.com">
-                <i class="fa-brands fa-square-instagram"></i>
-            </a>
-            <a href="https://tiktok.com">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-        </nav>
-        <p class="copyright">&copy; Pro Grear Hub 2025. All rights reserved.</p>
-    </footer>
+    <?php include "components/footer.php"; ?>
 </body>
 
 </html>
