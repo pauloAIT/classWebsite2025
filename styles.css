@@ -3,7 +3,7 @@
     --air-superiority-blue: rgb(243, 248, 255);
     --isabelline: rgb(222, 228, 245);
     --alloy-orange: hsla(26, 70%, 45%, 1);
-    --black: hsla(0, 0%, 0%, 1);
+    --black: rgb(4, 0, 0);
 }
 
 body {
